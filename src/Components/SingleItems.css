@@ -1,0 +1,128 @@
+.singleitems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+.singleitems__container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    padding: 0 10px;
+    background-color: #ffffff;
+}
+
+.singleitems__container__img {
+    padding: 10px;
+    width: 50%;
+    height: 70%;
+    background-color: #ffffff;
+}
+
+.singleitems__container__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.singleitems__container_right {
+    position: relative;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.singleitems__container_right h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+.singleitems__container_right p {
+    margin-top: 2%;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #403f3f;
+}
+
+.singleitems__container_right h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.singleitems__container_right button {
+    position: absolute;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.redprice {
+    color: #706c6c !important;
+    margin-top: 5% !important;
+    font-weight: 600 !important;
+    font-family: sans-serif !important;
+    font-size: 1.3rem !important;
+
+}
+
+.singleitems__container_right button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .singleitems {
+        height: 100%;
+    }
+
+    .singleitems__container {
+        margin-top: 5%;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .singleitems__container__img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .singleitems__container_right {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+
+    .singleitems__container_right h1 {
+        margin-top: 6%;
+        font-size: 1.5rem;
+    }
+
+    .singleitems__container_right h3 {
+        gap: 0%;
+        font-size: 1.2rem;
+    }
+
+    .singleitems__container_right p {
+        margin-top: 6%;
+    }
+
+
+}
